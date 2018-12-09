@@ -1,6 +1,6 @@
 {
   "name": "simple-ledger",
-  "version": "1.0.4",
+  "version": "1.0.0",
   "description": "A simple Nodejs ledger for wallet services",
   "main": "index.js",
   "scripts": {
