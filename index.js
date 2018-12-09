@@ -5,8 +5,7 @@ const createTransactionModel = require('./engine/models/transaction.model');
 const createWalletService = require('./engine/services/wallet.service');
 
 const defaultConfigs = {
-  ns: 'simple-ledger',
-  autoStart: true
+  ns: 'simple-ledger'
 };
 
 const SimpleLedgerEngine = (mongoUrl, redisClients, configs) => {
@@ -37,8 +36,7 @@ const SimpleLedgerEngine = (mongoUrl, redisClients, configs) => {
     close: async () => {
       try {
         await Transaction.collection.drop();
-      } catch (e) {
-      }
+      } catch (e) {}
       mongoose.disconnect();
       for (let redisClient of redisClients) {
         redisClient.quit();

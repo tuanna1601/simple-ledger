@@ -1,9 +1,12 @@
 const SimpleLedgerEngine = require('../index');
 const redisClient = require('redis').createClient();
-const engine = SimpleLedgerEngine('mongodb://localhost/simple-ledger', redisClient, {
-  ns: `test-${Math.random()}`,
-  autoStart: false
-});
+const engine = SimpleLedgerEngine(
+  'mongodb://localhost/simple-ledger',
+  redisClient,
+  {
+    ns: `test-${Math.random()}`
+  }
+);
 
 afterAll(async () => {
   await engine.clear();
