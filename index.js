@@ -5,10 +5,10 @@ const createTransactionModel = require('./engine/models/transaction.model');
 const createWalletService = require('./engine/services/wallet.service');
 
 const defaultConfigs = {
-  ns: 'simple-ledger'
+  ns: 'basic-ledger'
 };
 
-const SimpleLedgerEngine = (mongoUrl, redisClients, configs) => {
+const LedgerEngine = (mongoUrl, redisClients, configs) => {
   configs = {
     ...defaultConfigs,
     ...configs
@@ -45,4 +45,4 @@ const SimpleLedgerEngine = (mongoUrl, redisClients, configs) => {
   };
 };
 
-module.exports = SimpleLedgerEngine;
+module.exports = LedgerEngine;

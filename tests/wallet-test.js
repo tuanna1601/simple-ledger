@@ -1,12 +1,8 @@
-const SimpleLedgerEngine = require('../index');
+const LedgerEngine = require('../index');
 const redisClient = require('redis').createClient();
-const engine = SimpleLedgerEngine(
-  'mongodb://localhost/simple-ledger',
-  redisClient,
-  {
-    ns: `test-${Math.random()}`
-  }
-);
+const engine = LedgerEngine('mongodb://localhost/ledger', redisClient, {
+  ns: `test-${Math.random()}`
+});
 
 afterAll(async () => {
   await engine.clear();

@@ -1,9 +1,9 @@
 {
-  "name": "simple-ledger",
+  "name": "basic-ledger",
   "version": "1.0.0",
-  "description": "A simple Nodejs ledger for wallet services",
+  "description": "A basic Nodejs ledger for wallet services",
   "keywords": [
-    "simple-ledger",
+    "basic-ledger",
     "wallet services"
   ],
   "main": "index.js",
