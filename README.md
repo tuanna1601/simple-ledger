@@ -13,16 +13,16 @@ NodeJS implementation of a simple ledger for wallet services
 ## Setup
 
 ```bash
-npm install simple-ledger
+npm install basic-ledger
 ```
 
-## Init SimpleLedger:
+## Init BasicLedger:
 
 ```
-const SimpleLedger = require('simple-ledger');
+const BasicLedger = require('basic-ledger');
 const redisClient = require('redis').createClient();
 
-const ledger = SimpleLedger(MONGODB_URI, redisClient, {
+const ledger = BasicLedger(MONGODB_URI, redisClient, {
     ns: NAMESPACE
 });
 ```
