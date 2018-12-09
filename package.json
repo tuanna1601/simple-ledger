@@ -2,6 +2,10 @@
   "name": "simple-ledger",
   "version": "1.0.0",
   "description": "A simple Nodejs ledger for wallet services",
+  "keywords": [
+    "simple-ledger",
+    "wallet services"
+  ],
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --exec \"node --inspect=0.0.0.0:9229 test\"",
