@@ -1,6 +1,6 @@
 {
   "name": "basic-ledger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A basic Nodejs ledger for wallet services",
   "keywords": [
     "basic-ledger",
@@ -11,8 +11,12 @@
     "dev": "nodemon --exec \"node --inspect=0.0.0.0:9229 test\"",
     "test": "jest --config=config.json --verbose"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Tuan Nguyen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuanna1601/simple-ledger.git"
+  },
   "dependencies": {
     "bignumber.js": "^6.0.0",
     "mongoose": "^5.0.4",
